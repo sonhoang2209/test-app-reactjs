@@ -17,8 +17,8 @@ function item(props) {
                 <TextTransision text={props.data.text} />
             </div>
             <div className='arrow-btns'>
-                <span onClick={()=> console.log('aa')} className="arrow-btn arrow-left"></span>
-                <span className="arrow-btn arrow-right"></span>
+                <span onClick={props.prev} className="arrow-btn arrow-left"></span>
+                <span onClick={props.next} className="arrow-btn arrow-right"></span>
             </div>
             <div className='dots'>
 
