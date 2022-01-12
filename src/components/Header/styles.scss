@@ -1,0 +1,19 @@
+.header {
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 100;
+    color: #fff;
+    .header-inner {
+        display: flex;
+        max-width: 1240px;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        .block-right {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
