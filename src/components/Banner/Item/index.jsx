@@ -9,7 +9,6 @@ function item(props) {
         <div className='item'>
             <div className='block-opacity'></div>
             <div className='item-image'>
-                {/* <img src={ require('../../images/c.jpg') } alt='vn' /> */}
                 <img src={ props.data.image } alt='vn' />
             </div>
             <div className='item-content'>

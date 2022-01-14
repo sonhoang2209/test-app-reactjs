@@ -1,19 +1,12 @@
 import React from 'react';
 import './style.scss'
+import Buton from '../Buttons';
 
 function LinkPage() {
     return (
         <div className='link-page'>
-            <a href='http://reactplus.vn/'>
-                <div  className='link-wrapper'>
-                    <img src={ require('../../images/vn.png') } alt='vn' />
-                </div>
-            </a>
-            <a href='https://reactplus.com/home'>
-                <div className='link-wrapper'>
-                    <img src={ require('../../images/co-nhat.webp') } alt='jp' />
-                </div>
-            </a>
+            <Buton href='http://reactplus.vn/' imgSource='https://react-plus.com/images/logo/vn.png' />
+            <Buton href='https://react-plus.com/home' imgSource='https://react-plus.com/images/logo/co-nhat.webp' />
         </div>
     );
 }

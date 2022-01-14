@@ -2,9 +2,16 @@
     position: fixed;
     top:0;
     width: 100%;
-    background-color: transparent;
     z-index: 100;
-    color: #fff;
+    color: #000;
+    background-color: #fff;
+    &.header-active {
+        background-color: transparent;
+        color: #fff;
+    }
+    .navigation ul li.active{
+        border-bottom: 2px solid #000;
+    }
     .header-inner {
         display: flex;
         max-width: 1240px;

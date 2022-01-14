@@ -14,9 +14,7 @@ function TextTransision(props) {
     //     },20)
     // }, [texts])
     // useEffect(() => {
-    //     setTimeout(() => {
-    //       setTexts('')
-    //     },3000)
+    //     setTexts('')
     // },[props.text])
 
     return (

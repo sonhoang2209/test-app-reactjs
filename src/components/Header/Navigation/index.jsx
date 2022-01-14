@@ -4,19 +4,23 @@ import './style.scss'
 const navList = [
     {
         'title':'ホーム',
-        'link':''
+        'link':'/',
+        'id': 1
     },
     {
         'title':'会社情報',
-        'link':''
+        'link':'/about',
+        'id': 2
     },
     {
         'title':'サービス',
-        'link':''
+        'link':'/services',
+        'id': 3
     },
     {
         'title':'テクニカルスタック',
-        'link':'',
+        'link':'/technical',
+        'id': 4,
         'dropList':[
             {
                 'title':'Reactのテクニカルスタック',
@@ -38,26 +42,30 @@ const navList = [
     },
     {
         'title':'当社のチーム',
-        'link':''
+        'link':'/team',
+        'id': 5
     },
     {
         'title':'プロジェクト',
-        'link':''
+        'link':'/projects',
+        'id': 6
     },
     {
         'title':'お問い合わせ',
-        'link':''
+        'link':'/contact',
+        'id': 7
     },
 ]
 
 function Navigation(props) {
+    console.log(props.active)
     return (
         <nav className='navigation'>
             <ul>
                 {
                     navList.map((data, i) => {
                         return(
-                            <li key={i} className='navItem'>
+                            <li key={i} className={props.active == data.id ? 'navItem active' : 'navItem'}>
                                 <a href={data.link} className=''>{data.title}</a>
                             </li>
                         )

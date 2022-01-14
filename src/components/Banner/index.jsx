@@ -27,19 +27,20 @@ function Banner() {
     const [dataBanner, setDataBanner] = useState(banners[0])
     const [index, setIndex] = useState(0)
 
-    const autoBanner = () => {
-        setTimeout(()=>{
-            handleNext()
-        }, 3000)
-    }
+    // const autoBanner = () => {
+    //     setTimeout(()=>{
+    //         handleNext()
+    //     }, 3000)
+    // }
 
     useEffect(() => {
-        autoBanner()
+        // autoBanner()
+        
         setDataBanner(banners[index])
     },[index]);
 
     const handleNext = () => {
-        index === banners.length - 1 ? setIndex(0) : setIndex(index + 1)
+        index === banners.length - 1 ? setIndex(0) : setIndex( index + 1 )
     }
 
     const handlePrev = () => {

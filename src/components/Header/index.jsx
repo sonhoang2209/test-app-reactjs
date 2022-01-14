@@ -6,14 +6,14 @@ import LinkPage from './LinkPages';
 import './styles.scss'
 
 
-function Header() {
+function Header(props) {
     return (
         <header>
-            <div className='header'>
+            <div className={props.type ? 'header header-active' : 'header'}>
                 <div className='header-inner'>
                     <Logo />
                     <div className='block-right'>
-                        <Navigation />
+                        <Navigation active={props.active} />
                         <LinkPage />        
                     </div>
                 </div>
