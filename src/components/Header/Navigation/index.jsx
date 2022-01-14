@@ -5,22 +5,22 @@ const navList = [
     {
         'title':'ホーム',
         'link':'/',
-        'id': 1
+        'id': '1'
     },
     {
         'title':'会社情報',
         'link':'/about',
-        'id': 2
+        'id': '2'
     },
     {
         'title':'サービス',
         'link':'/services',
-        'id': 3
+        'id': '3'
     },
     {
         'title':'テクニカルスタック',
         'link':'/technical',
-        'id': 4,
+        'id': '4',
         'dropList':[
             {
                 'title':'Reactのテクニカルスタック',
@@ -43,17 +43,17 @@ const navList = [
     {
         'title':'当社のチーム',
         'link':'/team',
-        'id': 5
+        'id': '5'
     },
     {
         'title':'プロジェクト',
         'link':'/projects',
-        'id': 6
+        'id': '6'
     },
     {
         'title':'お問い合わせ',
         'link':'/contact',
-        'id': 7
+        'id': '7'
     },
 ]
 
@@ -65,7 +65,7 @@ function Navigation(props) {
                 {
                     navList.map((data, i) => {
                         return(
-                            <li key={i} className={props.active == data.id ? 'navItem active' : 'navItem'}>
+                            <li key={i} className={props.active === data.id ? 'navItem active' : 'navItem'}>
                                 <a href={data.link} className=''>{data.title}</a>
                             </li>
                         )

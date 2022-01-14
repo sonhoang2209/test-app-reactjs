@@ -9,8 +9,8 @@
         background-color: transparent;
         color: #fff;
     }
-    .navigation ul li.active{
-        border-bottom: 2px solid #000;
+    &.header-active .navigation ul li.active{
+        border-bottom: 2px solid #fff;
     }
     .header-inner {
         display: flex;
